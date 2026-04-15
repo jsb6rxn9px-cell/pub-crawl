@@ -97,7 +97,7 @@ const DATA = {
     },
     {
       id: 'q4',
-      question: "Quel est l'artiste de musique préféré à Isa?",
+      question: "Quel est l'artiste de musique préféré à Isa ?",
       options: ['Chief Keef', '21 Savage', 'Lana del Rey', 'Harry Styles'],
       correctAnswer: 3,
       timeLimit: 15,
