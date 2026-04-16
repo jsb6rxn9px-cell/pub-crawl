@@ -175,6 +175,7 @@ function computeScores() {
         if (rank === 1) pts = DATA.poemConfig.pointsForWinner;
         else if (rank === 2) pts = DATA.poemConfig.pointsFor2nd;
         else if (rank === 3) pts = DATA.poemConfig.pointsFor3rd;
+        else if (rank == 4) pts = DATA.poemConfig.pointsFor4th;
         if (scores[entry.teamId]) {
           scores[entry.teamId].byChallenges[DATA.poemConfig.challengeId] = pts;
           scores[entry.teamId].total += pts;
