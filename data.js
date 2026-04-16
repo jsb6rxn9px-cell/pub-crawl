@@ -8,33 +8,48 @@ const DATA = {
   // --- TEAMS ---
   // Add/remove teams as needed. Each needs a unique id.
   teams: [
-    { id: 't1', name: 'Les Flamants Roses', color: '#FF6B9D', emoji: '🦩' },
-    { id: 't2', name: 'Les Renards Rusés',  color: '#4ECDC4', emoji: '🦊' },
-    { id: 't3', name: 'Les Loups Galants',  color: '#FFD93D', emoji: '🐺' },
-    // { id: 't4', name: 'Équipe 4', color: '#A78BFA', emoji: '🦁' },
-  ],
+  { id: 't1', name: 'Les Flamants Roses', color: '#FF6B9D', emoji: '🦩' },
+  { id: 't2', name: 'Les Renards Rusés', color: '#4ECDC4', emoji: '🦊' },
+  { id: 't3', name: 'Les Loups Galants', color: '#FFD93D', emoji: '🐺' },
+  { id: 't4', name: 'Les Aigles Élégants', color: '#6C5CE7', emoji: '🦅' },
+],
 
   // --- PLAYERS ---
   // Each player must have a unique id and a valid teamId from above.
   // The admin user MUST have id: 'admin' — do not change this.
   players: [
-    { id: 'admin', name: '👑 Admin', teamId: 't1', isAdmin: true },
-    // Équipe 1
-    { id: 'p1',  name: 'Alex',     teamId: 't1' },
-    { id: 'p2',  name: 'Isa',      teamId: 't1' },
-    { id: 'p3',  name: 'Charlie',  teamId: 't1' },
-    { id: 'p4',  name: 'Sam',      teamId: 't1' },
-    // Équipe 2
-    { id: 'p5',  name: 'Jordan',   teamId: 't2' },
-    { id: 'p6',  name: 'Morgan',   teamId: 't2' },
-    { id: 'p7',  name: 'Taylor',   teamId: 't2' },
-    { id: 'p8',  name: 'Camille',  teamId: 't2' },
-    // Équipe 3
-    { id: 'p9',  name: 'Robin',    teamId: 't3' },
-    { id: 'p10', name: 'Dominique',teamId: 't3' },
-    { id: 'p11', name: 'Maxime',   teamId: 't3' },
-    { id: 'p12', name: 'Lou',      teamId: 't3' },
-  ],
+  { id: 'admin', name: '👑 Hugo Roy-Poulin', teamId: 't1', isAdmin: true },
+
+  // Équipe 1
+  { id: 'p1',  name: 'Charles-étienne Leblanc', teamId: 't1' },
+  { id: 'p2',  name: 'Dounia Hage', teamId: 't1' },
+  { id: 'p3',  name: 'Eugénie Tetreault', teamId: 't1' },
+  { id: 'p4',  name: 'Jade Ferrara', teamId: 't1' },
+  { id: 'p5',  name: 'Juliette Morency', teamId: 't1' },
+
+  // Équipe 2
+  { id: 'p6',  name: 'Alexis le Bouthillier', teamId: 't2' },
+  { id: 'p7',  name: 'Antoine Boily', teamId: 't2' },
+  { id: 'p8',  name: 'Eliot De Bruycher', teamId: 't2' },
+  { id: 'p9',  name: 'Julianne Gravel', teamId: 't2' },
+  { id: 'p10', name: 'Maxime Rouiller', teamId: 't2' },
+  { id: 'p11', name: 'Titouant Ebert', teamId: 't2' },
+
+  // Équipe 3
+  { id: 'p12', name: 'Alexandre Chandler', teamId: 't3' },
+  { id: 'p13', name: 'Emile Lamoureux', teamId: 't3' },
+  { id: 'p14', name: 'Émilie martel', teamId: 't3' },
+  { id: 'p15', name: 'Joseph Boonen', teamId: 't3' },
+  { id: 'p16', name: 'Justin Frigon', teamId: 't3' },
+  { id: 'p17', name: 'Maelle Dalceggio', teamId: 't3' },
+
+  // Équipe 4
+  { id: 'p18', name: 'Antoine Payette toupin', teamId: 't4' },
+  { id: 'p19', name: 'Isabella Saavedra', teamId: 't4' },
+  { id: 'p20', name: 'Laurent Faucher', teamId: 't4' },
+  { id: 'p21', name: 'Marie-Claire Taché', teamId: 't4' },
+  { id: 'p22', name: 'Philippe Myrand', teamId: 't4' },
+],
 
   // --- CHALLENGES ---
   // type: 'normal' (upload proof), 'kahoot' (quiz), 'poem' (vote)
@@ -54,7 +69,7 @@ const DATA = {
     { id: 'c11', title: 'Concevoir une structure architecturale pour embellir le quartier', points: 2, category: 'Défis déplacement', type: 'normal', order: 11 },
 
     // Bars
-    { id: 'c12', title: 'Première équipe arrivée et servie', points: 1, category: 'Bar 1 — BAR A', type: 'normal', order: 12 },
+    { id: 'c12', title: 'Première équipe être servie', points: 1, category: 'Bar 1 — BAR A', type: 'normal', order: 12 },
     { id: 'c13', title: 'Get un petit refreshment rapide', points: 1, category: 'Bar 1 — BAR A', type: 'normal', order: 13 },
     { id: 'c14', title: 'Split un G (parfait)', points: 2, category: 'Bar 2 — L\'Barouf', type: 'normal', order: 14 },
     { id: 'c15', title: 'Get dequoi de tchek', points: 2, category: 'Bar 3 — Bili Kun', type: 'normal', order: 15 },
