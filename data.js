@@ -153,12 +153,13 @@ const DATA = {
     pointsForWinner: 5,      // Points awarded to winning team
     pointsFor2nd: 3,
     pointsFor3rd: 1,
+    pointsFor4th: 0,
   },
 
   // --- KAHOOT SCORING ---
   kahootScoring: {
     challengeId: 'c16',
-    teamPoints: { 1: 5, 2: 3, 3: 1 },  // rank -> points
+    teamPoints: { 1: 5, 2: 3, 3: 1, 4: 0},  // rank -> points
     topIndividuals: 3,                     // # of individuals exempt from shot
   },
 };
