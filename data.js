@@ -56,17 +56,18 @@ const DATA = {
   // category: group them visually in the UI
   challenges: [
     // Défis déplacement
-    { id: 'c1',  title: 'Faire un faux reportage de 15 secondes sur un événement en live', points: 2, category: 'Défis déplacement', type: 'normal', order: 1 },
+    { id: 'c1',  title: 'Faire un reportage de sur un événement en live', points: 2, category: 'Défis déplacement', type: 'normal', order: 1 },
     { id: 'c2',  title: 'Trouver un totem d\'équipe que vous transporterez (vidéo d\'explication)', points: 2, category: 'Défis déplacement', type: 'normal', order: 2 },
     { id: 'c3',  title: 'Réussir à avoir un drink gratuit', points: 3, category: 'Défis déplacement', type: 'normal', order: 3 },
     { id: 'c4',  title: 'Composer un poème pour Alex et un pour Isa (récités et jugés à la fin)', points: 0, category: 'Défis déplacement', type: 'poem', order: 4 },
     { id: 'c5',  title: 'Gobbler une bouteille de vin complète en équipe en moins de 5 min', points: 3, category: 'Défis déplacement', type: 'normal', order: 5 },
-    { id: 'c6',  title: 'Crush une bière à un itinérant', points: 4, category: 'Défis déplacement', type: 'normal', order: 6 },
+    { id: 'c6',  title: 'Donner une bière à un itinérant (3 points extra si tu en bois une avec lui)', points: 4, category: 'Défis déplacement', type: 'normal', order: 6 },
     { id: 'c7',  title: 'Trouver un mini-cadeau absurde mais sincère pour Isa ET pour Alex', points: 5, category: 'Défis déplacement', type: 'normal', order: 7 },
-    { id: 'c8',  title: 'Strip sa bouteille au souper en moins de 5 min', points: 3, category: 'Défis déplacement', type: 'normal', order: 8 },
+    { id: 'c8',  title: 'Avoir bu sa bouteille de vin au souper(tous les membre de l\'équipe présent doivent l\'avoir bu)', points: 3, category: 'Défis déplacement', type: 'normal', order: 8 },
     { id: 'c9',  title: 'Ice Isa ou Alex', points: 3, category: 'Défis déplacement', type: 'normal', order: 9 },
     { id: 'c10', title: 'Acheter une bière à plus de 7%', points: 2, category: 'Défis déplacement', type: 'normal', order: 10 },
     { id: 'c11', title: 'Concevoir une structure architecturale pour embellir le quartier', points: 2, category: 'Défis déplacement', type: 'normal', order: 11 },
+    
 
     // Bars
     { id: 'c12', title: 'Première équipe être servie', points: 1, category: 'Bar 1 — BAR A', type: 'normal', order: 12 },
@@ -159,6 +160,7 @@ const DATA = {
       correctAnswer: 2,
       timeLimit: 15,
     },
+    
   ],
 
   // --- POEM CHALLENGE CONFIG ---
