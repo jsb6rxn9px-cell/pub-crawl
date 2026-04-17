@@ -22,7 +22,7 @@ const DATA = {
 
   // Équipe 1
   { id: 'p1',  name: 'Charles-étienne Leblanc', teamId: 't1' },
-  { id: 'p2',  name: 'Dounia Hage', teamId: 't1' },
+  { id: 'p2',  name: 'Philippe Myrand', teamId: 't1' },
   { id: 'p3',  name: 'Eugénie Tetreault', teamId: 't1' },
   { id: 'p4',  name: 'Jade Ferrara', teamId: 't1' },
   { id: 'p5',  name: 'Juliette Morency', teamId: 't1' },
@@ -48,7 +48,7 @@ const DATA = {
   { id: 'p19', name: 'Isabella Saavedra', teamId: 't4' },
   { id: 'p20', name: 'Laurent Faucher', teamId: 't4' },
   { id: 'p21', name: 'Marie-Claire Taché', teamId: 't4' },
-  { id: 'p22', name: 'Philippe Myrand', teamId: 't4' },
+  { id: 'p22', name: 'Dounia Hage', teamId: 't4' },
 ],
 
   // --- CHALLENGES ---
