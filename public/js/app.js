@@ -225,7 +225,7 @@
               <div class="challenge-actions">
                 <label class="upload-btn" id="upload-btn-${ch.id}">
                   📷 Ajouter une preuve
-                  <input type="file" accept="image/*,video/*" capture="environment"
+                  <input type="file" accept="image/*,video/*"
                     onchange="window._handleUpload(this, '${ch.id}', '${team.id}')">
                 </label>
               </div>` : `
@@ -321,7 +321,7 @@
         // Reset input
         input.value = '';
         if (btn) {
-          btn.innerHTML = `📷 Ajouter une preuve<input type="file" accept="image/*,video/*" capture="environment" onchange="window._handleUpload(this, '${challengeId}', '${teamId}')">`;
+          btn.innerHTML = `📷 Ajouter une preuve<input type="file" accept="image/*,video/*" onchange="window._handleUpload(this, '${challengeId}', '${teamId}')">`;
           btn.style.pointerEvents = '';
         }
       });
