@@ -982,3 +982,48 @@ body { padding-bottom: calc(var(--tab-height) + var(--safe-bottom) + 8px); }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+
+/* ============================================================
+   MEMBERS LIST
+   ============================================================ */
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.member-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+}
+.member-row.member-me {
+  background: var(--accent-glow);
+  border: 1px solid var(--accent);
+}
+.member-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.member-name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+}
+.member-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  color: #fff;
+}
+.member-online {
+  color: var(--success);
+  font-size: 10px;
+}
