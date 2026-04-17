@@ -242,7 +242,41 @@
           </div>`;
       }
     }
+    // === SECTION MEMBRES ===
+    html += `<div class="challenge-category">👥 Mon équipe</div>`;
+    const myTeamPlayers = players.filter(p => p.teamId === currentUser.teamId && !p.isAdmin);
+    html += `<div class="challenge-card">
+      <div class="members-list">
+        ${myTeamPlayers.map(p => `
+          <div class="member-row ${p.id === currentUser.id ? 'member-me' : ''}">
+            <span class="member-dot" style="background:${team.color}"></span>
+            <span class="member-name">${esc(p.name)}</span>
+            ${p.id === currentUser.id ? '<span class="member-badge">Toi</span>' : ''}
+            ${onlinePlayers.includes(p.id) ? '<span class="member-online">●</span>' : ''}
+          </div>`).join('')}
+      </div>
+    </div>`;
 
+    // Autres équipes
+    html += `<div class="challenge-category">🏅 Autres équipes</div>`;
+    for (const t of teams) {
+      if (t.id === currentUser.teamId) continue;
+      const tPlayers = players.filter(p => p.teamId === t.id && !p.isAdmin);
+      html += `<div class="challenge-card">
+        <div class="challenge-top">
+          <div class="challenge-title">${t.emoji} ${esc(t.name)}</div>
+          <div class="challenge-points">${getTeamScore(t.id)} pts</div>
+        </div>
+        <div class="members-list">
+          ${tPlayers.map(p => `
+            <div class="member-row">
+              <span class="member-dot" style="background:${t.color}"></span>
+              <span class="member-name">${esc(p.name)}</span>
+              ${onlinePlayers.includes(p.id) ? '<span class="member-online">●</span>' : ''}
+            </div>`).join('')}
+        </div>
+      </div>`;
+    }
     page.innerHTML = html;
   }
 
